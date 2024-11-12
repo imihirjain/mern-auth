@@ -6,10 +6,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.get("/", (req, res) => {
-  res.send("Hello world 14577");
-});
-
+app.use(express.json()); // allow use to parse the incomingn requests:- req.body
 app.use("/api/auth", authRoutes);
 app.listen(PORT, () => {
   connectDB();
