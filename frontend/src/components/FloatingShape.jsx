@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 const FloatingShape = ({ color, size, top, left, delay }) => {
   return (
